@@ -18,7 +18,7 @@ This Flutter project demonstrates integration of Google Maps using the `google_m
 ---
 
 ## 🗂️ Project Structure
-
+```
 gmap/
 ├── lib/
 │ └── main.dart # Main Flutter app with Google Map widget
@@ -29,7 +29,7 @@ gmap/
 │ └── AndroidManifest.xml # API key is stored here
 ├── pubspec.yaml # Flutter dependencies
 └── README.md # You are reading it
-
+```
 
 ## 🔐 Getting Your Google Maps API Key
 
