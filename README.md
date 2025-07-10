@@ -1,92 +1,49 @@
-# 🗺️ Flutter Google Maps App - Karachi Marker
+# 🚀 Flutter Projects Collection
 
-This Flutter project demonstrates integration of Google Maps using the `google_maps_flutter` plugin, with a custom marker placed on **Karachi, Pakistan**.
-
----
-
-## 📸 Features
-
-- Google Maps Integration using native API key injection
-- Custom Marker on a specific LatLng (Karachi)
-- Clean and minimal Flutter implementation
+Welcome to my collection of Flutter projects!  
+This repository is organized to hold **multiple mini Flutter apps**, built for learning, practice, and showcasing Flutter capabilities.
 
 ---
 
-## 🗂️ Project Structure
+## 📂 What’s Inside?
 
-gmap/
-├── lib/
-│ └── main.dart # Main Flutter app with Google Map widget
-├── android/
-│ └── app/
-│ └── src/
-│ └── main/
-│ └── AndroidManifest.xml # API key is stored here
-├── pubspec.yaml # Flutter dependencies
-└── README.md # You are reading it
+| Folder | Description |
+|--------|-------------|
+| [`gmap`](./gmap) | 🗺️ A simple Google Maps Flutter app with a marker placed on Karachi, Pakistan. |
 
+> More projects like `todo_app/`, `login_ui/`, `weather_app/` will be added soon!
 
-## 🔐 Getting Your Google Maps API Key
+---
 
-1. Go to [Google Cloud Console](https://console.cloud.google.com/)
-2. Create a new project or select an existing one.
-3. Navigate to: APIs & Services → Credentials → Create Credentials → API Key
-4. Copy the generated API key.
-5. Enable the following APIs for your project:
-- Maps SDK for Android
-- Maps SDK for iOS (if needed)
+## 📸 Screenshots
 
+<details>
+<summary>Click to expand</summary>
 
-## 🔧 API Key Setup (Required for Android)
+| Project | Screenshot |
+|--------|------------|
+| gmap   | _Coming soon (Karachi marker view)_ |
+| todo_app | _Coming soon_ |
+| login_ui | _Coming soon_ |
 
-### 👉 In `android/app/src/main/AndroidManifest.xml`
+</details>
 
-Replace this placeholder line:
-<meta-data
- android:name="com.google.android.geo.API_KEY"
- android:value="YOUR_GOOGLE_MAPS_API_KEY_HERE"/>
+---
 
-with your actual API key:
+## 🛠️ Prerequisites
 
+Before running any project, ensure you have:
 
-<meta-data
-    android:name="com.google.android.geo.API_KEY"
-    android:value="AIzaSyXXXXXX_Your_Key_Here"/>
+- [Flutter SDK](https://flutter.dev/docs/get-started/install) installed
+- A code editor like [VS Code](https://code.visualstudio.com/) or [Android Studio](https://developer.android.com/studio)
+- Android/iOS emulator or physical device
 
-📦 Dependencies
-In pubspec.yaml, make sure you have:
+---
 
-dependencies:
-  flutter:
-    sdk: flutter
-  google_maps_flutter: ^2.5.0
-Then install packages by running:
-flutter pub get
+## 🚀 Getting Started
 
+### 1. Clone the repo
 
-▶️ How to Run the Project
-1. Clone the repo:
+```bash
 git clone https://github.com/vikashbaria/flutter-projects.git
-cd flutter-projects/gmap
-2. Add your API key in:
-android/app/src/main/AndroidManifest.xml
-3. Install dependencies:
-flutter pub get
-4. Run the app:
-flutter run
-🧪 Tested On
-✅ Android Emulator (API 33)
-
-✅ Physical Android Device
-
-🛠️ iOS not tested (setup required)
-
-🧾 Notes
-This app is intended for learning and demo purposes.
-
-Google Maps may charge after free tier limits - Pricing Info
-
-You must keep your API keys secure.
-
-👨‍💻 Author
-Vikash Harjeewan
+cd flutter-projects
