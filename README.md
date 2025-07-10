@@ -80,41 +80,39 @@ flutter run
 
 ## 🧑‍💻 About Me
 I’m a passionate developer with experience in:
-```bash
-✅ Flutter Mobile Development
-✅ PHP Backend Development
-✅ Python Scripting
-✅ Web Scraping & Data Mining
-✅ Web Automation & Bot Creation
-```
+
+ - ✅ Flutter Mobile Development
+ - ✅ PHP Backend Development
+ - ✅ Python Scripting
+ - ✅ Web Scraping & Data Mining
+ - ✅ Web Automation & Bot Creation
 
 I love building practical apps, automating boring tasks, and solving real-world problems with smart code.
 
 ## 💼 Got a Project or Idea?
 If you have a project or requirement in:
-```bash
-Flutter (apps, UI, maps, auth)
-PHP (APIs, admin panels, dashboards)
-Python (web scraping, automation)
-Web Scraping & Data Mining
-Custom Bots / Scripts / Auto Tools
-📩 Feel free to contact me — I'm open to freelance, collaboration, or full-time opportunities!
-📧 Email: vikashbaria4@gmail.com
-🌐 GitHub: github.com/vikashbaria
-```
+
+- Flutter (apps, UI, maps, auth)
+- PHP (APIs, admin panels, dashboards)
+- Python (web scraping, automation)
+- Web Scraping & Data Mining
+- Custom Bots / Scripts / Auto Tools
+- 📩 Feel free to contact me — I'm open to freelance, collaboration, or full-time opportunities!
+- 📧 Email: vikashbaria4@gmail.com
+- 🌐 GitHub: github.com/vikashbaria
+
 Let’s build something amazing together!
 
 ## 🧪 What’s Coming Next?
-```bash
-⏳ todo_app – Simple offline task manager
-⏳ login_ui – Login and registration with animations
-⏳ weather_app – Weather data with API and dynamic UI
-⏳ scraper_ui – GUI wrapper around Python scraping tool
+
+- ⏳ todo_app – Simple offline task manager
+- ⏳ login_ui – Login and registration with animations
+- ⏳ weather_app – Weather data with API and dynamic UI
+- ⏳ scraper_ui – GUI wrapper around Python scraping tool
 Stay tuned and ⭐ star the repo to support!
-```
+
 ## 🙌 Thanks for Visiting!
-
-
+If you found something useful or want to support my work, consider giving this repo a ⭐ star!
 
 
 
