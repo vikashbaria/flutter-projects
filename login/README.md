@@ -1,16 +1,55 @@
-# login
+# 🚀 Flutter Login UI
 
-A new Flutter project.
+This is a simple and clean **Flutter login page UI** with form validation, password visibility toggle, and social login buttons (Apple & Google).
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## 📸 Screenshot
 
-A few resources to get you started if this is your first Flutter project:
+![Login Screen](https://raw.githubusercontent.com/vikashbaria/flutter-projects/refs/heads/main/login/login_page_image.JPG)
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+---
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 🛠️ Features
+
+- Email & Password form with validation
+- Password show/hide toggle
+- Social login UI (Apple & Google)
+- Responsive layout
+- Flutter form validation
+- Clean design using `TextFormField`, `ElevatedButton`, etc.
+
+---
+
+## ▶️ Getting Started
+
+1. Clone this repo:
+
+```bash
+git clone https://github.com/vikashbaria/flutter-projects.git
+cd flutter-login-ui
+```
+2. Install dependencies:
+```bash
+flutter pub get
+```
+3. Run the app:
+```bash
+flutter run
+```
+---
+## 📁 Assets
+Make sure these assets are added in pubspec.yaml:
+```bash
+flutter:
+  assets:
+    - assets/logo.png
+    - assets/google.jpeg
+    - assets/screenshots/login_screen.png
+```
+## 📬 Contact
+For any questions or feedback, feel free to contact vikashbaria4@gmail.com
+
+
+
+
