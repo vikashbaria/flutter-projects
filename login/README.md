@@ -27,7 +27,7 @@ This is a simple and clean **Flutter login page UI** with form validation, passw
 
 ```bash
 git clone https://github.com/vikashbaria/flutter-projects.git
-cd flutter-login-ui
+cd login
 ```
 2. Install dependencies:
 ```bash
