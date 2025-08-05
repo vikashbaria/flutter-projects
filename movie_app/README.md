@@ -65,6 +65,28 @@ flutter run
 ```
 
 ## 📸 Screenshots
+![App front page](https://raw.githubusercontent.com/vikashbaria/flutter-projects/refs/heads/main/movie_app/App%20front%20page.JPG)
+
+
+## 📌 Notes
+ - This app is for educational/demonstration purposes.
+ - Do not expose your TMDB API key in public repositories.
+ - Make sure to handle API limits and errors in production-ready apps.
+
+## 📧 Contact
+	For any queries or suggestions, feel free to reach out at [YourEmail@example.com].
+	
+	---
+
+	Let me know if you want:
+	- Dark theme integration mentioned
+	- Firebase or local storage if included
+	- Screenshots or badges (e.g. made with Flutter)
+
+	I can also generate this as a `.md` file if you'd like to download and use it directly.
+
+
+
 
 
 
