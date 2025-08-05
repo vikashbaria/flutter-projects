@@ -34,6 +34,14 @@ GET https://api.themoviedb.org/3/movie/popular?api_key=YOUR_API_KEY
 ## 📸 Screenshots
 ![App front page](https://raw.githubusercontent.com/vikashbaria/flutter-projects/refs/heads/main/movie_app/App%20front%20page.JPG)
 
+## 📦 Download APK
+
+You can try the app by downloading the APK from the link below:
+
+👉 [Download app-debug.apk](app-debug.apk)
+
+> **Note:** If you're cloning the project, make sure to run the app on an emulator or physical device using Flutter CLI.
+
 
 ## 📁 Project Structure
 
