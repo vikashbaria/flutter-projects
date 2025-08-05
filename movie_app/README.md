@@ -38,7 +38,7 @@ GET https://api.themoviedb.org/3/movie/popular?api_key=YOUR_API_KEY
 
 You can try the app by downloading the APK from the link below:
 
-👉 [Download app-debug.apk](app-debug.apk)
+👉 [Download app-debug.apk](https://github.com/vikashbaria/flutter-projects/raw/main/movie_app/app-debug.apk)
 
 > **Note:** If you're cloning the project, make sure to run the app on an emulator or physical device using Flutter CLI.
 
