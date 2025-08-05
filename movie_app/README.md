@@ -31,6 +31,10 @@ To fetch popular movies:
 GET https://api.themoviedb.org/3/movie/popular?api_key=YOUR_API_KEY
 ```
 
+## 📸 Screenshots
+![App front page](https://raw.githubusercontent.com/vikashbaria/flutter-projects/refs/heads/main/movie_app/App%20front%20page.JPG)
+
+
 ## 📁 Project Structure
 
 The app is organized into the following main folders:
@@ -64,8 +68,6 @@ flutter pub get
 flutter run
 ```
 
-## 📸 Screenshots
-![App front page](https://raw.githubusercontent.com/vikashbaria/flutter-projects/refs/heads/main/movie_app/App%20front%20page.JPG)
 
 
 ## 📌 Notes
