@@ -38,6 +38,7 @@ assets/
 ## ⚙️ Installation & Setup
 
 1. **Clone the repository**
+
    ```bash
    git clone <your_repo_url>
    cd <project_name>
@@ -51,6 +52,8 @@ flutter pub get
 flutter run
 
    ```
+   
+   
 ---
 
 ## 📸 Screenshots	
