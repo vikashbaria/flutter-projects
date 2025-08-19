@@ -69,7 +69,5 @@ flutter run
 ![Signin Screen](https://raw.githubusercontent.com/vikashbaria/flutter-projects/refs/heads/main/figma%20design%20to%20flutter/Sign_in.JPG)
 
    
-## 🛠️ Tech Stack
-Flutter
-Dart
-go_router
+## 📧 Contact
+For any queries or suggestions, feel free to reach out at [vikashbaria4@gmail.com].
