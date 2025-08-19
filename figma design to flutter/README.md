@@ -1,16 +1,43 @@
-# figmalogindesign
+# 📱 Flutter Authentication UI (Figma to Flutter)
 
-A new Flutter project.
+This project is a **Flutter UI implementation** converted from Figma. It includes three main screens handled with **go_router** for navigation:
 
-## Getting Started
+- **Welcome Screen**
+- **Signin Screen**
+- **Signup Screen**
 
-This project is a starting point for a Flutter application.
+---
 
-A few resources to get you started if this is your first Flutter project:
+## 🚀 Features
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- Flutter UI converted from Figma design  
+- Clean navigation using **go_router**  
+- Responsive design with **Scaffold + Column + Stack** layout  
+- Authentication flow screens:  
+  - Welcome → Signin → Signup  
+- Styled with Material components (TextFormField, ElevatedButton, Checkbox, etc.)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+---
+
+## 📂 Project Structure
+
+lib/
+│── main.dart # Entry point
+│── app_router.dart # go_router configuration
+│── pages/
+│ ├── welcome_page.dart
+│ ├── signin_page.dart
+│ ├── signup_page.dart
+assets/
+│── welcome.png
+│── Sign-in.png
+│── signup.png
+
+---
+
+## ⚙️ Installation & Setup
+
+1. **Clone the repository**
+   ```bash
+   git clone <your_repo_url>
+   cd <project_name>
