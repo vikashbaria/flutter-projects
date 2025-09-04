@@ -24,11 +24,14 @@ With a clean UI and smooth experience, it allows you to **write entries, choose 
 
 ## 📸 Screenshots
 
-| Splash Screen | Journal Home | New Entry |
-|---------------|--------------|-----------|
-| ![Splash](./splash.png) | ![Journal](./journal.png) | ![NewEntry](./new_entry.png) |
+| Splash Screen | Home Screen | Journal Screen |
+|---------------|-------------|----------------|
+| ![Splash](https://github.com/vikashbaria/flutter-projects/blob/main/secondthoughts/splashscreen.JPG?raw=true) | ![Home](https://github.com/vikashbaria/flutter-projects/blob/main/secondthoughts/main_homescreen.JPG?raw=true) | ![Journal](https://raw.githubusercontent.com/vikashbaria/flutter-projects/refs/heads/main/secondthoughts/journel.JPG) |
 
-> ⚠️ Place your screenshots (`splash.png`, `journal.png`, `new_entry.png`) in the **project root**.
+| Mood Screen |
+|-------------|
+| ![Mood](https://github.com/vikashbaria/flutter-projects/blob/main/secondthoughts/mood.JPG?raw=true) |
+
 
 ---
 
@@ -44,7 +47,7 @@ Make sure you have:
 
 1. **Clone the repository**
    ```
-   git clone https://github.com/your-username/secondthoughts.git
+   git clone https://github.com/vikashbaria/flutter-project/secondthoughts.git
    cd secondthoughts
 ```
 
