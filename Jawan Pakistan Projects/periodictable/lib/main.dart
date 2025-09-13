@@ -195,178 +195,34 @@ class _PeriodicTablePageState extends State<PeriodicTablePage> {
         group: 18,
       ),
     },
-    4: {
-      1: ElementData(
-        number: 19,
-        symbol: 'K',
-        name: 'Potassium',
-        atomicMass: '39.098',
-        period: 4,
-        group: 1,
-      ),
-      2: ElementData(
-        number: 20,
-        symbol: 'Ca',
-        name: 'Calcium',
-        atomicMass: '40.078',
-        period: 4,
-        group: 2,
-      ),
-      3: ElementData(
-        number: 21,
-        symbol: 'Sc',
-        name: 'Scandium',
-        atomicMass: '44.956',
-        period: 4,
-        group: 3,
-      ),
-      4: ElementData(
-        number: 22,
-        symbol: 'Ti',
-        name: 'Titanium',
-        atomicMass: '47.867',
-        period: 4,
-        group: 4,
-      ),
-      5: ElementData(
-        number: 23,
-        symbol: 'V',
-        name: 'Vanadium',
-        atomicMass: '50.942',
-        period: 4,
-        group: 5,
-      ),
-      6: ElementData(
-        number: 24,
-        symbol: 'Cr',
-        name: 'Chromium',
-        atomicMass: '51.996',
-        period: 4,
-        group: 6,
-      ),
-      7: ElementData(
-        number: 25,
-        symbol: 'Mn',
-        name: 'Manganese',
-        atomicMass: '54.938',
-        period: 4,
-        group: 7,
-      ),
-      8: ElementData(
-        number: 26,
-        symbol: 'Fe',
-        name: 'Iron',
-        atomicMass: '55.845',
-        period: 4,
-        group: 8,
-      ),
-      9: ElementData(
-        number: 27,
-        symbol: 'Co',
-        name: 'Cobalt',
-        atomicMass: '58.933',
-        period: 4,
-        group: 9,
-      ),
-      10: ElementData(
-        number: 28,
-        symbol: 'Ni',
-        name: 'Nickel',
-        atomicMass: '58.693',
-        period: 4,
-        group: 10,
-      ),
-      11: ElementData(
-        number: 29,
-        symbol: 'Cu',
-        name: 'Copper',
-        atomicMass: '63.546',
-        period: 4,
-        group: 11,
-      ),
-      12: ElementData(
-        number: 30,
-        symbol: 'Zn',
-        name: 'Zinc',
-        atomicMass: '65.38',
-        period: 4,
-        group: 12,
-      ),
-      13: ElementData(
-        number: 31,
-        symbol: 'Ga',
-        name: 'Gallium',
-        atomicMass: '69.723',
-        period: 4,
-        group: 13,
-      ),
-      14: ElementData(
-        number: 32,
-        symbol: 'Ge',
-        name: 'Germanium',
-        atomicMass: '72.630',
-        period: 4,
-        group: 14,
-      ),
-      15: ElementData(
-        number: 33,
-        symbol: 'As',
-        name: 'Arsenic',
-        atomicMass: '74.922',
-        period: 4,
-        group: 15,
-      ),
-      16: ElementData(
-        number: 34,
-        symbol: 'Se',
-        name: 'Selenium',
-        atomicMass: '78.971',
-        period: 4,
-        group: 16,
-      ),
-      17: ElementData(
-        number: 35,
-        symbol: 'Br',
-        name: 'Bromine',
-        atomicMass: '79.904',
-        period: 4,
-        group: 17,
-      ),
-      18: ElementData(
-        number: 36,
-        symbol: 'Kr',
-        name: 'Krypton',
-        atomicMass: '83.798',
-        period: 4,
-        group: 18,
-      ),
-    },
   };
-
-  ElementData? selected;
 
   Widget buildCell(int r, int c) {
     final element = elementsMap[r]?[c];
     if (element == null) {
-      return const SizedBox.shrink();
+      return Container(
+        margin: const EdgeInsets.all(4),
+        decoration: BoxDecoration(
+          color: Colors.transparent,
+          borderRadius: BorderRadius.circular(6),
+        ),
+      );
     }
 
     return GestureDetector(
-      onTap: () => setState(() => selected = element),
       child: Container(
         margin: const EdgeInsets.all(4),
         padding: const EdgeInsets.all(6),
         decoration: BoxDecoration(
-          color: Colors.white,
           borderRadius: BorderRadius.circular(6),
-          border: Border.all(color: Colors.black12),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(0.06),
+              color: Colors.white,
               blurRadius: 4,
               offset: const Offset(0, 2),
             ),
           ],
+          border: Border.all(color: Colors.black12),
         ),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
