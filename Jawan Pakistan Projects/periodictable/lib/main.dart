@@ -22,7 +22,7 @@ class ElementData {
   final String atomicMass;
   final int period;
   final int group;
-  final String category; // optional, for coloring
+  final String category;
 
   ElementData({
     required this.number,
@@ -43,13 +43,11 @@ class PeriodicTablePage extends StatefulWidget {
 }
 
 class _PeriodicTablePageState extends State<PeriodicTablePage> {
-  // 7 periods (rows) and 18 groups (columns)
+  // Periods (rows) and Groups (columns)
   static const int periods = 7;
   static const int groups = 18;
 
-  // A map keyed by period -> group -> ElementData
-  // I populated common elements through around krypton for demo.
-  // Extend this map to include all elements. Use period and group positions.
+  // Map of elements
   final Map<int, Map<int, ElementData>> elementsMap = {
     1: {
       1: ElementData(
@@ -383,68 +381,7 @@ class _PeriodicTablePageState extends State<PeriodicTablePage> {
         category: 'noble gas',
       ),
     },
-    // Period 5+ add as needed...
-    5: {
-      1: ElementData(
-        number: 37,
-        symbol: 'Rb',
-        name: 'Rubidium',
-        atomicMass: '85.468',
-        period: 5,
-        group: 1,
-        category: 'alkali metal',
-      ),
-      2: ElementData(
-        number: 38,
-        symbol: 'Sr',
-        name: 'Strontium',
-        atomicMass: '87.62',
-        period: 5,
-        group: 2,
-        category: 'alkaline earth',
-      ),
-      // ... continue filling groups 3..18 for period 5
-    },
-    6: {
-      1: ElementData(
-        number: 55,
-        symbol: 'Cs',
-        name: 'Caesium',
-        atomicMass: '132.91',
-        period: 6,
-        group: 1,
-        category: 'alkali metal',
-      ),
-      2: ElementData(
-        number: 56,
-        symbol: 'Ba',
-        name: 'Barium',
-        atomicMass: '137.33',
-        period: 6,
-        group: 2,
-        category: 'alkaline earth',
-      ),
-    },
-    7: {
-      1: ElementData(
-        number: 87,
-        symbol: 'Fr',
-        name: 'Francium',
-        atomicMass: '(223)',
-        period: 7,
-        group: 1,
-        category: 'alkali metal',
-      ),
-      2: ElementData(
-        number: 88,
-        symbol: 'Ra',
-        name: 'Radium',
-        atomicMass: '(226)',
-        period: 7,
-        group: 2,
-        category: 'alkaline earth',
-      ),
-    },
+    // Aap yahan se period 5,6,7 continue kar sakte hain...
   };
 
   ElementData? selected;
@@ -535,114 +472,26 @@ class _PeriodicTablePageState extends State<PeriodicTablePage> {
     return Scaffold(
       appBar: AppBar(title: const Text('Periodic Table (demo)')),
       body: SingleChildScrollView(
-        child: Column(
-          children: [
-            // Table grid (scrollable horizontally for small screens)
-            SingleChildScrollView(
-              scrollDirection: Axis.horizontal,
-              child: Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: Column(
-                  children: List.generate(periods, (rIndex) {
-                    final period = rIndex + 1;
-                    return Row(
-                      children: List.generate(groups, (cIndex) {
-                        final group = cIndex + 1;
-                        return SizedBox(
-                          width: 88,
-                          height: 88,
-                          child: buildCell(period, group),
-                        );
-                      }),
+        child: SingleChildScrollView(
+          scrollDirection: Axis.horizontal, // poore table ke liye ek hi scroll
+          child: Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Column(
+              children: List.generate(periods, (rIndex) {
+                final period = rIndex + 1;
+                return Row(
+                  children: List.generate(groups, (cIndex) {
+                    final group = cIndex + 1;
+                    return SizedBox(
+                      width: 88,
+                      height: 88,
+                      child: buildCell(period, group),
                     );
                   }),
-                ),
-              ),
+                );
+              }),
             ),
-
-            const SizedBox(height: 8),
-
-            // Selected element details
-            AnimatedSwitcher(
-              duration: const Duration(milliseconds: 300),
-              child: selected == null
-                  ? const Padding(
-                      padding: EdgeInsets.all(12.0),
-                      child: Text('Tap any element tile to see details here.'),
-                    )
-                  : Container(
-                      key: ValueKey(selected!.number),
-                      margin: const EdgeInsets.all(12),
-                      padding: const EdgeInsets.all(12),
-                      decoration: BoxDecoration(
-                        color: Colors.white,
-                        borderRadius: BorderRadius.circular(8),
-                        boxShadow: [
-                          BoxShadow(
-                            color: Colors.black.withOpacity(0.05),
-                            blurRadius: 6,
-                          ),
-                        ],
-                      ),
-                      child: Row(
-                        children: [
-                          Container(
-                            width: 80,
-                            height: 80,
-                            decoration: BoxDecoration(
-                              color: categoryColor(selected!.category),
-                              borderRadius: BorderRadius.circular(8),
-                            ),
-                            child: Center(
-                              child: Text(
-                                selected!.symbol,
-                                style: const TextStyle(
-                                  fontSize: 30,
-                                  fontWeight: FontWeight.bold,
-                                ),
-                              ),
-                            ),
-                          ),
-                          const SizedBox(width: 12),
-                          Expanded(
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Text(
-                                  '${selected!.name} (${selected!.symbol})',
-                                  style: const TextStyle(
-                                    fontSize: 18,
-                                    fontWeight: FontWeight.bold,
-                                  ),
-                                ),
-                                const SizedBox(height: 6),
-                                Text('Atomic number: ${selected!.number}'),
-                                Text('Atomic mass: ${selected!.atomicMass}'),
-                                Text(
-                                  'Period: ${selected!.period}, Group: ${selected!.group}',
-                                ),
-                                Text('Category: ${selected!.category}'),
-                              ],
-                            ),
-                          ),
-                          IconButton(
-                            icon: const Icon(Icons.close),
-                            onPressed: () => setState(() => selected = null),
-                          ),
-                        ],
-                      ),
-                    ),
-            ),
-            const SizedBox(height: 12),
-            const Padding(
-              padding: EdgeInsets.symmetric(horizontal: 12.0),
-              child: Text(
-                'Note: This demo has many elements filled but not all — add more entries to elementsMap to complete the table, and adjust styling as needed.',
-                style: TextStyle(fontSize: 12, color: Colors.black54),
-              ),
-            ),
-            const SizedBox(height: 14),
-          ],
+          ),
         ),
       ),
     );
