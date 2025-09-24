@@ -48,20 +48,16 @@ class _HomescreenState extends State<Homescreen> {
                 return ListTile(
                   leading: CircleAvatar(
                     backgroundColor: Colors.teal,
-                    child: Text(
-                      (chat["name"] != null && chat["name"]!.isNotEmpty)
-                          ? chat["name"]![0].toUpperCase()
-                          : "?",
-                    ),
+                    child: Text(chat["name"]![0]),
                   ),
                   title: Text(
-                    chat["name"] ?? "Unknown",
-                    style: const TextStyle(fontWeight: FontWeight.bold),
+                    chat["name"]!,
+                    style: TextStyle(fontWeight: FontWeight.bold),
                   ),
-                  subtitle: Text(chat["message"] ?? ""),
+                  subtitle: Text(chat["message"]!),
                   trailing: Text(
-                    chat["time"] ?? "",
-                    style: const TextStyle(color: Colors.grey, fontSize: 12),
+                    chat["time"]!,
+                    style: TextStyle(color: Colors.grey, fontSize: 12),
                   ),
                   onTap: () {},
                 );
